@@ -8,13 +8,13 @@
     Dessa forma, como primeiro objetivo do trabalho foi entender como esses sistemas funcionam e qual deles seria interessante de se utilizar nas simulações. São muitas variantes destes sistemas disponíveis. Entre eles existem o OpenAPS, AndroidAPS e o Loop. O precursor de todos, o OpenAPS é o único que roda em uma placa eletrônica, diferente dos outros que rodam no sistema operacional de celulares. Dessa forma foi decidido utilizar o OpenAPS como o sistema Open-Source de controle de diabetes para usufruir do nosso simulador como corpo humano.
 
 
-![title](images/openaps.jpg)
+![title](doc_files/openaps.jpg)
 
 # Primeiro modelo
 
 Para o primeiro modelo, foi encontrado um simulador de diabetes tipo 1 chamado GlucoDyn. O objetivo dele é ajudar pessoas recentemente diagnosticadas a entender melhor o funcionamento da glicemia junto com alimentação e aplicação de insulina.
 
-![title](images/glucodyn.png)
+![title](doc_files/glucodyn.png)
 
 Para começar nosso modelo, foi realizada uma adaptação do modelo do GlucoDyn para Python com o objetivo de conseguir trabalhar melhor com as simulações, porém podendo usar o próprio GlucoDyn como validação.
 O software trabalha em loop, onde os itens de um lista se tratam de cada momento no futuro. Dessa forma ingerir um alimento ou aplicar uma dose de insulina possuem seus efeitos ao longo do tempo afetando cada momento futuro de uma forma diferente.
